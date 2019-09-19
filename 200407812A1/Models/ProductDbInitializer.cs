@@ -13,7 +13,7 @@ namespace _200407812A1.Models
         {
             Products def = new Products
             {
-                Name = "Beeff",
+                Name = "Beef",
                 Price = 5,
                 Description = "Beautiful",
                 Nutritional_Information = "Vitamin Z",
