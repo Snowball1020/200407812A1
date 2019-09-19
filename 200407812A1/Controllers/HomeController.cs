@@ -26,5 +26,13 @@ namespace _200407812A1.Controllers
 
             return View();
         }
+
+        public ActionResult ListOfProducts()
+        {
+            ViewBag.Message = "Product list page.";
+
+            return View();
+        }
+
     }
 }

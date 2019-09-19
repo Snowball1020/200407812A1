@@ -29,5 +29,7 @@ namespace _200407812A1.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<_200407812A1.Models.Products> Products { get; set; }
     }
 }

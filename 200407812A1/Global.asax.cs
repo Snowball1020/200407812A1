@@ -1,5 +1,7 @@
-﻿using System;
+﻿using _200407812A1.Models;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -12,6 +14,9 @@ namespace _200407812A1
     {
         protected void Application_Start()
         {
+
+            Database.SetInitializer(new ProductDbInitializer());
+
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
